@@ -1,12 +1,11 @@
 import React from 'react'
 
 
-function
-ChatBox (){
+function ChatBox (){
   return(
-    <div className='chatbox' style={{width:'250px', height:'639px', backgroundColor:'grey'}}>
+    <div className='right'>
 
-      <div className='haeder'>
+      <div className='header'>
         AI Forest Assistant
       </div>
 
@@ -35,15 +34,6 @@ ChatBox (){
         <div className='bot message'>
           Can I help you with more data? <br/> Let me know and I'll create it.
         </div>
-
-
-
-
-        
-
-        
-        
-        
       </div>  
     </div>
   )
