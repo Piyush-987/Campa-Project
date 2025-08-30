@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
   return (
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" color='blue'>
   <div class="container-fluid">
     <a style={{marginLeft:'20px', marginRight:"70px"}} class="navbar-brand" href="#">Campa Intelligence Platform</a>
     <form style={{marginRight:'50px'}} class="d-flex" role="search">
