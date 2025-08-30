@@ -33,14 +33,19 @@ position: fixed;
 
 
 }
+.heading{
+  background-color: antiquewhite;
+  height:50px;
+}
 .center{
   flex: 1;
-  margin-left: 200px;  /* space for left panel */
-  margin-right: 200px; /* space for right panel */
+  margin-top: 56px;
+  margin-left: 225px;  /* space for left panel */
+  margin-right: 275px; /* space for right panel */
   padding: 20px;
-  height:1000px;
+  height:0px;
   background-color: #f8f8f8;
-  overflow-y: auto;
+  
 }
 .fa-regular{
   margin-left: 100px;
@@ -49,4 +54,29 @@ position: fixed;
 .fa-solid{
   margin-left: 25px;
 padding-right: 50px;
+}
+.new{
+  background-color: black;
+  width:460px;
+  height:300px;
+  border-radius: 10px;
+  margin-bottom: 20px;;
+}
+.new1{
+  width:200px;
+  height:150px;
+  background-color: black;
+  border-radius: 10px;
+}
+.new2{
+  width:900px;
+  height:200px;
+  background-color: black;
+  border-radius: 10px;
+}
+.new3{
+  width:300px;
+  height:200px;
+  background-color: black;
+  border-radius: 10px;
 }
