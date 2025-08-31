@@ -1,0 +1,58 @@
+.rightChatbox {
+  position: fixed; /* if you want it to stay at the right */
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  background: #f5f7fb; /* very light background */
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header */
+.chatbox-header {
+  background: #000000; 
+  padding: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Messages area */
+.chatbox-messsages {
+  flex: 1;
+  padding: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Bot message bubble */
+.bot-message {
+  max-width: 80%;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  align-self: flex-start;
+  border: 0.5px solid #eee;
+}
+
+/* User message bubble */
+.user-message {
+  max-width: 80%;
+  background: #0078ff;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  align-self: flex-end;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
