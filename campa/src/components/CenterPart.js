@@ -2,10 +2,10 @@ import React from 'react'
 import img1 from '../images/img1.jpg'
 function CenterPart() {
   return (
-    <>
+    <div>
     <div className='center'>
     <div className="heading">Jharkahnd</div>
-    <img style={{marginBottom:'20px',marginTop:'20px',paddingLeft:'35px',width:'950px', height:'300px'}} src={img1}></img>
+    <img style={{marginBottom:'20px',marginTop:'20px',width:'950px', height:'300px'}} src={img1}></img>
     <h4>Forest Intelligence</h4>
     <div class="d-flex justify-content-around">
         <div className='new1'>yo</div>
@@ -32,7 +32,8 @@ function CenterPart() {
         <div className='new3'>yo</div>
     </div>
     </div>
-  </>)
+  </div>
+  )
 }
 
 export default CenterPart

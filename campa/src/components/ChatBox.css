@@ -1,9 +1,9 @@
 .rightChatbox {
   position: fixed; /* if you want it to stay at the right */
   right: 0;
-  top: 0;
+  top: 56px;
   height: 100%;
-  width: 350px;
+  width: 300px;
   background: #f5f7fb; /* very light background */
   border-left: 1px solid #ddd;
   display: flex;
@@ -14,6 +14,8 @@
 
 /* Header */
 .chatbox-header {
+  color: white;
+  justify-content: center;
   background: #000000; 
   padding: 5px;
   font-weight: 600;
@@ -36,6 +38,7 @@
 
 /* Bot message bubble */
 .bot-message {
+  font-size: 15px;
   max-width: 80%;
   background: #ffffff;
   color: #000000;
@@ -48,6 +51,7 @@
 
 /* User message bubble */
 .user-message {
+  font-size: 15px;
   max-width: 80%;
   background: #0078ff;
   color: #fff;

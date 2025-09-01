@@ -8,12 +8,12 @@ function App() {
   return (
     
     <>
-    <Navbar style={{position:'fixed', display:'flex'}} />
-    <div className='layout' >
+    <Navbar style={{position:'fixed'}} />
+    {/* <div className='layout' >
     <LeftPanel />
     <CenterPart />
     <ChatSection />
-    </div>
+    </div> */}
     </>
     
   );
