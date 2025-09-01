@@ -9,11 +9,11 @@ function App() {
     
     <>
     <Navbar style={{position:'fixed'}} />
-    {/* <div className='layout' >
+    <div className='layout' >
     <LeftPanel />
     <CenterPart />
     <ChatSection />
-    </div> */}
+    </div>
     </>
     
   );
