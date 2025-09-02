@@ -7,7 +7,7 @@ function Navbar() {
   <div class="container-fluid">
         <img style={{width:'50px', height:'50px'}} src={treeLogo}></img>
         <div className='yo' style={{display:'flex', flexDirection:'column', lineHeight:'1', marginRight:'30px'}}>
-    <a style={{marginLeft:'5px',color:'white',fontSize:'18px' }} class="navbar-brand" href="#">Campa Intelligence Platform
+    <a style={{marginLeft:'5px',color:'white',fontSize:'18px', fontFamily:'Poppins', fontWeight:'bold' }} class="navbar-brand" href="#">Campa Intelligence Platform
     </a>
       <a style={{marginLeft:'5px',color:'white', fontSize:'14px'}} class="navbar-brand" href="#">Jharkhand Forest Monitoring and Afforestation Planning</a>
     </div>
@@ -19,16 +19,16 @@ function Navbar() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{marginLeft:'50px',color:'white', fontSize:'18px'}} aria-current="page" href="#">Home</a>
+          <a class="nav-link active" style={{marginLeft:'50px',color:'white', fontSize:'17px'}} aria-current="page" href="#">Home</a>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white', fontSize:'18px'}} href="#">About Us</a>
+          <a class="nav-link active" style={{color:'white', fontSize:'17px'}} href="#">About Us</a>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white',fontSize:'18px'}} href="#">Services</a>
+          <a class="nav-link active" style={{color:'white',fontSize:'17px'}} href="#">Services</a>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white', fontSize:'18px'}} href="#">Contact Us</a>
+          <a class="nav-link active" style={{color:'white', fontSize:'17px'}} href="#">Contact Us</a>
         </li>
       </ul>
       <i class=" bell fa-regular fa-bell fa-lg" style={{color:'white'}}></i>
