@@ -1,10 +1,10 @@
 .rightChatbox {
   position: fixed; 
   right: 0;
-  top: 0;
-  height: 100%;
-  width: 350px;
-  background: #f5f7fb; 
+  bottom: 0;
+  top: 68px;
+  width: 364px;
+  background: #f5f7fb; /* very light background */
   border-left: 1px solid #ddd;
   display: flex;
   flex-direction: column;
@@ -14,10 +14,14 @@
 
 
 .chatbox-header {
-  background: #000000; 
+  color: black;
+  height: 92px;
+  
+  justify-content: center;
+  background: rgba(48, 109, 229, 0.2); 
   padding: 5px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -27,27 +31,29 @@
 
 .chatbox-messsages {
   flex: 1;
-  padding: 16px;
-  
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap:35px;
+  justify-content: flex-start;
+  gap: 25px;
 }
 
 
 .bot-message {
+  font-size: 15px;
   max-width: 80%;
   background: #ffffff;
   color: #000000;
-  padding: 10px 14px;
+  padding: 10px ;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  align-self: flex-start;
-  border: 0.5px solid #eee;
+  justify-content: flex-start;
+  border: 0.5px solid whitesmoke;
 }
 
 
 .user-message {
+  font-size: 15px;
   max-width: 80%;
   background: #0078ff;
   color: #fff;
@@ -87,7 +93,7 @@
 
 .chatbox-input input{
   border: none;
-  width: 360px;
+  width: 365px ;
   border-radius: 20px;
   padding: 10px;
   font-size: 16px;
@@ -99,12 +105,13 @@
   background-color: #0078ff;
   color: white;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  font-size: 25px;
 }
 
 .chatbox-input .send-button:hover{

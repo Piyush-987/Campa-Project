@@ -8,7 +8,7 @@ function App() {
   return (
     
     <>
-    <Navbar style={{position:'fixed', display:'flex'}} />
+    <Navbar style={{position:'fixed'}} />
     <div className='layout' >
     <LeftPanel />
     <CenterPart />

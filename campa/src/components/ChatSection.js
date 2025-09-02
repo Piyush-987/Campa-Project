@@ -39,6 +39,14 @@ function ChatBox (){
           Can I help you with more data? Let me know and I'll create it.
         </div>
 
+        <div className='user-message'>
+          No. That's all!
+        </div>
+
+        
+
+        </div>
+
         <div className='chatbox-suggestion'>
           <button>What can you do?</button>
           <button>Forest Fire Detection!</button>
@@ -49,8 +57,6 @@ function ChatBox (){
           <button className='send-button'>➤</button>
 
 
-
-        </div>
 
       </div>  
     </div>
