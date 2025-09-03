@@ -59,7 +59,7 @@ display: flex;
 .new{
   border: 1px solid #E8E8E8;
   width:470px;
-  height:400px;
+  height:500px;
   border-radius: 10px;
   margin-bottom: 20px;;
 }
@@ -109,7 +109,13 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.41) 74.92%, rgba(164, 
   margin-bottom:18px;
 }
 .four{
-  width:180px;
-  height: 180px;
+  width:200px;
+  height: 200px;
   border: 1px solid #E8E8E8;
+  border-radius: 10px;
+}
+.bigg{
+  width:469px;
+  height:470px;
+  
 }

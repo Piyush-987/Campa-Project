@@ -4,6 +4,8 @@ import Vector1 from "../images/Vector1.png";
 import Vector2 from "../images/Vector2.png";
 import Vector3 from "../images/Vector3.png";
 import Vector4 from "../images/Vector4.png";
+import ForestFireGraph from './ForestFireGraph'
+
 function CenterPart() {
   return (
     <div className="center">
@@ -66,13 +68,25 @@ function CenterPart() {
         </div>
         <h4 style={{paddingLeft: '15px', marginBottom:'18px'}}>Real Time AI Analysis</h4>
         <div class="d-flex justify-content-evenly">
-          <div className="new d-flex justify-content-center" style={{flexWrap:"wrap"}}>Climate changes
-            <div className="four">1</div>
-            <div className="four">2</div>
-            <div className="four">3</div>
-            <div className="four">4</div>
+          <div className="new">
+            <div className="climateHeadinng d-flex justify-content-center">
+            <h6 style={{fontSize:'20px', paddingTop:'12px'}}>Climate Changes</h6>
+            </div>
+            <div className="bigg d-flex justify-content-center align-items-center" style={{flexWrap:'wrap', marginTop:'-10px'}}>
+            <div className="four" style={{marginRight:'30px', marginBottom:'-10px'}}>1</div>
+            <div className="four" style={{marginBottom:'-10px'}}>2</div>
+            <div className="four" style={{marginRight:'30px',marginTop:'-5px'}}>3</div>
+            <div className="four" style={{marginTop:'-5px'}}>4</div>
+            </div>
           </div>
-          <div className="new">Forest Fire</div>
+          <div className="new">
+            <div className="climateHeadinng d-flex justify-content-center">
+            <h6 style={{fontSize:'20px', paddingTop:'12px'}}>Forest Fire</h6>
+            </div>
+            <div className="bigg d-flex justify-content-center align-items-center" style={{marginTop:'-10px'}}>
+            <ForestFireGraph/>
+            </div>
+          </div>
         </div>
         <div class="d-flex justify-content-evenly">
           <div className="new">Forest Distribution Chart</div>
