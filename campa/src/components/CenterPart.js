@@ -3,7 +3,7 @@ import img1 from "../images/img1.jpg";
 function CenterPart() {
   return (
     <div className="center">
-        <div className="heading">Jharkhand Forest Intelligence Map</div>
+        <div className="heading" >Jharkhand Forest Intelligence Map</div>
         <img
           style={{
             marginLeft:'18px',
