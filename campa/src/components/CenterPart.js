@@ -10,8 +10,8 @@ function CenterPart() {
         <div className="heading" >Jharkhand Forest Intelligence Map
           <h4 style={{fontSize:'13px'}}> Click anywhere on the map for real forest analysis</h4>
         </div>
-        <div className="heading" >Jharkhand Forest Intelligence Map</div>
-        <img
+
+           <img
           style={{
             marginLeft:'18px',
             marginBottom: "18px",
