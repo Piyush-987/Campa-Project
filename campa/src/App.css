@@ -2,7 +2,7 @@ body {
 
 margin :0;
 padding:0;
-
+font-family:'Poppins';
 }
 .layout {
 display: flex;
@@ -21,18 +21,20 @@ display: flex;
   overflow-y: auto;
 
 }
-.right{
+/* .right{
 
-   /* below navbar */
   right: 0;
   bottom: 0;
   background-color: #e0e0e0;
   padding: 20px;
   overflow-y: auto;
-}
+} */
 .heading{
-  background-color: antiquewhite;
-  height:50px;
+  display: flex;
+  font-size: 19px;;
+  flex-direction: column;
+  background-color:#f0f0f0;
+  height:70px;
   width:987px;
   padding-left: 15px;
   padding-top: 12px;
@@ -41,8 +43,7 @@ display: flex;
 .center{
   margin-left: 235px;  /* space for left panel */
   margin-right: 300px; /* space for right panel */
-  height:0px;
-  background-color: red;
+  min-height: 100px;
   
 }
  .bell{
@@ -56,30 +57,59 @@ display: flex;
   padding-right: 50px;
 } 
 .new{
-  background-color: black;
+  border: 1px solid #E8E8E8;
   width:470px;
-  height:295px;
+  height:400px;
   border-radius: 10px;
   margin-bottom: 20px;;
 }
 .new1{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E8E8E8;
   margin-bottom:18px;
   width:227px;
   height:200px;
-  background-color: black;
   border-radius: 10px;
 }
 .new2{
   margin-bottom:18px;
   width:955px;
-  height:200px;
-  background-color: black;
+  height:300px;
+  border: 1px solid #E8E8E8;
   border-radius: 10px;
 }
 .new3{
   margin-bottom:18px;
   width:265px;
   height:200px;
-  background-color: black;
+  border: 1px solid #E8E8E8;
   border-radius: 10px;
+}
+#box1{
+background: linear-gradient(0.89deg, rgba(48, 144, 74, 0.5) -66.77%, rgba(255, 255, 255, 0.5) 22.74%);
+}
+#box2{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.48536) 80.03%, rgba(255, 82, 59, 0.3) 137.55%);
+}
+#box3{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.31) 76.6%, rgba(196, 255, 102, 0.217) 114%);
+}
+#box4{
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.41) 74.92%, rgba(164, 194, 255, 0.41) 130.67%, rgba(164, 194, 255, 0.41) 152.62%);
+}
+.new4{
+  width:225px;
+  height:50px;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  margin-bottom:18px;
+}
+.four{
+  width:180px;
+  height: 180px;
+  border: 1px solid #E8E8E8;
 }

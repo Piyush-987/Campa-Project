@@ -14,7 +14,7 @@ function ChatBox (){
       <div className='chatbox-messsages'>
 
         <div className='bot-message'>         
-          <br/>
+          
           Welcome, I am your personal AI bot.Let me know what can I help you with?
               
         </div>
