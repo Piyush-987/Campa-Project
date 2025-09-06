@@ -32,7 +32,8 @@ display: flex;
 .heading{
   display: flex;
   font-size: 19px;;
-  flex-direction: column;
+  flex-direction: row;
+  /* align-items: center; */
   background-color:#f0f0f0;
   height:70px;
   width:987px;
@@ -89,6 +90,13 @@ display: flex;
   border: 1px solid #E8E8E8;
   border-radius: 10px;
 }
+.new4{
+  color: white;
+  background: rgba(0, 114, 78, 0.88);
+border: 2px solid #00724E;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
 #box1{
 background: linear-gradient(0.89deg, rgba(48, 144, 74, 0.5) -66.77%, rgba(255, 255, 255, 0.5) 22.74%);
 }
@@ -118,4 +126,38 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.41) 74.92%, rgba(164, 
   width:469px;
   height:470px;
   
+}
+.satellite{
+  margin-top: 10px;
+  margin-left: 410px;
+  margin-right: 12px;
+  width:90px;
+  height:25px;
+  background-color: #a9df9c;
+  color: #38981f;
+  border-radius: 10px;
+}
+.live-system{
+  margin-top: 10px;
+  width:120px;
+  height:25px;
+  background-color: #a9df9c;
+  color: #38981f;
+  border-radius: 10px;
+}
+#four1{
+background: linear-gradient(148.72deg, rgba(255, 255, 255, 0.85) 59.16%, rgba(197, 154, 63, 0.85) 199.68%);
+border: 1px solid #E1E1E1;
+}
+#four2{
+  background: linear-gradient(171.06deg, #FFFFFF 80.72%, #3753FF 134.52%);
+border: 1px solid #E1E1E1;
+}
+#four3{
+  background: linear-gradient(158.55deg, rgba(255, 255, 255, 0.58) 65.55%, rgba(177, 232, 255, 0.58) 114.11%);
+border: 1px solid #E1E1E1;
+}
+#four4{
+  background: linear-gradient(160.95deg, #FFFFFF 65.17%, #352870 190.39%);
+border: 1px solid #E1E1E1;
 }

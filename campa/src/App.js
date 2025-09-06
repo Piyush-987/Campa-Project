@@ -10,7 +10,7 @@ function App() {
     <>
     <Navbar style={{position:'fixed'}} />
     <div className='layout' >
-    <LeftPanel />
+    {/* <LeftPanel /> */}
     <CenterPart />
     <ChatSection />
     </div>

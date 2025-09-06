@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import "./LeftPanel.css";
 export default function LeftPanel() {
   
   const [layers, setLayers] = useState({});
@@ -12,8 +12,8 @@ export default function LeftPanel() {
 
 
   return (
-    <aside className='left-panel'>
-      <section className='block'>
+    <div className='left-panel'>
+      <div className='block' >
         <h4 className='title'>
           Search District
         </h4>
@@ -22,7 +22,7 @@ export default function LeftPanel() {
           <option>Choose District</option>
         </select>
 
-      </section>
+      </div>
       <section className='block'>
         <h4 className='title'> Analysis Tools </h4>
         <span>Analyze a specific point below</span>
@@ -62,7 +62,7 @@ export default function LeftPanel() {
 
 
 
-    </aside>
+    </div>
 
         
   )
