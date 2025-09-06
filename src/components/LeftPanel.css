@@ -1,5 +1,8 @@
 .leftpanel{
     
+    
+
+    width: 270px;
     background:rgb(248, 249, 251);
     padding: 20px;
     border-right: 1px solid #ddd;
@@ -75,4 +78,39 @@ span{
     
  }
 
+ .button-csv{
+    height: 46px;
+    font-size: 16px;
+    background: #c95050;
+    color: #ddd;
+    align-items: center;
+    width: 100%;
+    border: 0.5px;
+    border-radius: 10px;
+    border-color:  #930400;
+ }
+
+ .button-csv:hover{
+    background:#930400;
+    box-shadow:#c95050;
+
+ }
+
+
+ .button-pdf{
+    height: 46px;
+    font-size: 16px;
+    background: #3234c4;
+    color: #ddd;
+    align-items: center;
+    width: 100%;
+    border: 0.5px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+ }
+
+ .button-pdf:hover{
+    background:#22238a ;
+ }
 
