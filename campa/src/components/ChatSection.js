@@ -1,10 +1,13 @@
 import React from 'react'
 import "./ChatBox.css";
+
 function ChatBox (){
   return(
     <div className='rightChatbox'>
+      
+        <div className='chatbox-header'>
+               
 
-      <div className='chatbox-header'>
         AI Forest Assistant 
       </div>
     

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './LeftPanel.css';
 
 export default function LeftPanel() {
   
@@ -12,7 +13,7 @@ export default function LeftPanel() {
 
 
   return (
-    <aside className='left-panel'>
+    <aside className='leftpanel'>
       <section className='block'>
         <h4 className='title'>
           Search District
@@ -33,7 +34,7 @@ export default function LeftPanel() {
 
 
       <section className="block">
-        <h3 className="block__title">
+        <h3 className="block_title">
           <span className="dot">●</span> Map Layers
         </h3>
         <ul className="checklist">
@@ -46,7 +47,7 @@ export default function LeftPanel() {
           ].map((name) => (
             <li
               key={name}
-              className={`checklist__item ${layers[name] ? "is-checked" : ""}`}
+              className={`checklist_item ${layers[name] ? "is-checked" : ""}`}
             >
               <input
                 id={name}
@@ -59,6 +60,40 @@ export default function LeftPanel() {
           ))}
         </ul>
       </section>
+
+      <section className='block'>
+          <h4 className='title'>Target Species</h4>
+          <ul className='checklist'>
+            {["Sal" , 
+              "Teak" ,
+              "Bamboo",
+              "Eucalyptus"].map((name) => (
+                <li
+                key={name}
+                className={`checklist_item ${layers[name] ? "is-checked" : ""}`}
+                >
+                  <input
+                    id={name}
+                    type="checkbox"
+                    checked={!!species[name]}
+                    onChange={() => toggle(setSpecies, name)}
+                    />
+                    <label htmlFor={name}>  {name} </label>
+               </li>
+              ))}
+
+
+
+          </ul>
+        </section>
+
+        <div className='block-footer'>
+          <button className='button-csv'>Export as CSV</button>
+          <button className='button-pdf'>Export as PDF</button>   
+
+        </div>
+
+      
 
 
 
