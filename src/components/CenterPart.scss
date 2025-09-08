@@ -1,0 +1,84 @@
+// Variables
+$card-bg: #ffffff;
+$card-radius: 12px;
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+$shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.12);
+$primary-green: #4caf50;
+
+.panels-row {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+// Both cards share styles
+.Biodiversity,
+.IllegalActivities {
+  background: $card-bg;
+  border-radius: $card-radius;
+  box-shadow: $shadow;
+  padding: 20px;
+  width: 45%;
+  min-height: 220px;
+
+  h5 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+// Biodiversity progress bars
+.Biodiversity {
+  .progress-item {
+    margin-bottom: 12px;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .progress {
+      background: #eaeaea;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 6px;
+
+      .progress-bar {
+        background: $primary-green;
+        color: white;
+        font-size: 12px;
+        text-align: right;
+        padding-right: 6px;
+        height: 18px;
+        border-radius: 6px;
+        transition: width 0.4s ease;
+      }
+    }
+  }
+}
+
+// Illegal activities grid
+.IllegalActivities {
+  .illegal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 10px;
+
+    .illegal-tile {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-hover;
+      }
+    }
+  }
+}
