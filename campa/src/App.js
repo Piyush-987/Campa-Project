@@ -37,7 +37,7 @@ function App() {
 
     </Router>
     <div className='layout' >
-    <LeftPanel />
+    {/* <LeftPanel /> */}
     <CenterPart />
     <ChatSection />
     </div>
