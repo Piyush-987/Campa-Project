@@ -1,5 +1,6 @@
 import React from 'react'
 import treeLogo from '../images/treeLogo.png'
+import { Link } from 'react-router-dom';
 function Navbar() {
   return (
 
@@ -7,9 +8,9 @@ function Navbar() {
   <div class="container-fluid">
         <img style={{width:'50px', height:'50px'}} src={treeLogo}></img>
         <div className='yo' style={{display:'flex', flexDirection:'column', lineHeight:'1', marginRight:'30px'}}>
-    <a style={{marginLeft:'5px',color:'white',fontSize:'18px', fontFamily:'Poppins', fontWeight:'bold' }} class="navbar-brand" href="#">Campa Intelligence Platform
-    </a>
-      <a style={{marginLeft:'5px',color:'white', fontSize:'14px'}} class="navbar-brand" href="#">Jharkhand Forest Monitoring and Afforestation Planning</a>
+    <Link style={{marginLeft:'5px',color:'white',fontSize:'18px', fontFamily:'Poppins', fontWeight:'bold' }} class="navbar-brand" to="/">Campa Intelligence Platform
+    </Link>
+      <a style={{marginLeft:'5px',color:'white', fontSize:'14px'}} class="navbar-brand" to="/">Jharkhand Forest Monitoring and Afforestation Planning</a>
     </div>
         <div style={{ alignItems:'center'}} class="d-flex" role="search">
         <input style={{width:'340px', borderRadius:'20px 0px 0px 20px', opacity:'60%', color:'white'}} class="form-control" type="search" placeholder="Search" aria-label="Search"/>
@@ -19,16 +20,16 @@ function Navbar() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{marginLeft:'50px',color:'white', fontSize:'17px'}} aria-current="page" href="#">Home</a>
+          <Link class="nav-link active" style={{marginLeft:'50px',color:'white', fontSize:'17px'}} aria-current="page" to="/home">Home</Link>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white', fontSize:'17px'}} href="#">About Us</a>
+          <Link class="nav-link active" style={{color:'white', fontSize:'17px'}} to="/aboutus">About Us</Link>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white',fontSize:'17px'}} href="#">Services</a>
+          <Link class="nav-link active" style={{color:'white',fontSize:'17px'}} to="/services">Services</Link>
         </li>
         <li style={{marginRight:'25px'}} class="nav-item">
-          <a class="nav-link active" style={{color:'white', fontSize:'17px'}} href="#">Contact Us</a>
+          <Link class="nav-link active" style={{color:'white', fontSize:'17px'}} to="contactus">Contact Us</Link>
         </li>
       </ul>
       <i class=" bell fa-regular fa-bell fa-lg" style={{color:'white'}}></i>

@@ -16,6 +16,11 @@ import trees from "../images/trees.png";
 import image1 from "../images/image1.png";
 import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
+import plus from '../images/plus.png'
+import minus from '../images/minus.png'
+import ElementLevels from './ElementLevels';
+import Temperature from '../components/Temperature';
+import AirQuality from '../components/AirQuality';
 function CenterPart() {
   return (
     <div className="center">
@@ -59,7 +64,7 @@ function CenterPart() {
           </h6>
         </div>
       </div>
-
+<div className="image-container" style={{position:'relative'}}>
       <img
         style={{
           marginLeft: "18px",
@@ -69,9 +74,38 @@ function CenterPart() {
         }}
         src={img1}
       ></img>
+        <div className="box-overlay d-flex">
+
+        <div className="over1">3D View</div>
+        <div className="over2">Satellite</div>
+        <div className="over3">Boundaries</div>
+
+        </div>
+        <div className="box-overlay1 d-flex">
+
+        <div className="over4">
+        <img
+        style={{
+        }}
+        src={minus}
+      ></img>
+        </div>
+        <div className="over5">
+        <img
+        style={{
+        }}
+        src={plus}
+      ></img>
+        </div>
+
+        </div>
+      </div>
+      <div className="intelligence d-flex align-items-center">
       <h4 style={{ paddingLeft: "15px", marginBottom: "18px" }}>
         Forest Intelligence Dashboard
       </h4>
+      <h6 style={{right:'0', marginLeft:'500px'}}>Generate Report</h6>
+      </div>
       <div class="d-flex justify-content-evenly">
         <div className="new1" id="box1" style={{ fontWeight: "600" }}>
           <img
@@ -187,12 +221,26 @@ function CenterPart() {
             <div
               className="four"
               id="four1"
-              style={{ marginRight: "30px", marginBottom: "-10px" }}
-            >
-              1
+              style={{ marginRight: "30px", marginBottom: "-10px" }}>
+              <div className="climateHeadinng d-flex justify-content-center">
+              <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
+              Temperature
+              </h6>
+              </div>
+              <div>
+              <AirQuality/>
+             </div>
             </div>
             <div className="four" id="four2" style={{ marginBottom: "-10px" }}>
-              2
+              <div className="climateHeadinng d-flex justify-content-center">
+              <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
+              Temperature
+              </h6>
+              </div>
+              <div>
+              <Temperature/>
+             </div>
+              
             </div>
             <div
               className="four"
@@ -231,13 +279,34 @@ function CenterPart() {
             className="bigg d-flex justify-content-center align-items-center"
             style={{ marginTop: "-10px" }}
           >
-            <ForestDistributionChart />
+            <ForestDistributionChart/>
           </div>
         </div>
-        <div className="new">Element Levels in Soil</div>
+        <div className="new"><div className="climateHeadinng d-flex justify-content-center">
+            <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>
+              Element Levels in Soil
+            </h6>
+          </div>
+          <div
+            className="bigg d-flex justify-content-center align-items-center"
+            style={{ marginTop: "-10px" }}
+          >
+            <ElementLevels />
+          </div></div>
       </div>
       <div class="d-flex justify-content-evenly">
-        <div className="new2">Soil Characteristics</div>
+        <div className="new2 d-flex justify-content-center">
+          <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>Soil Characteristics</h6>
+          </div>
+          <div className="soil d-flex justify-content-evenly">
+          <div className="soilpart">
+            yo
+          </div>
+
+          <div className="soilpart">
+            yo
+          </div>
+          </div>
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         Photo Gallery

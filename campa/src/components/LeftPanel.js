@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
 import './LeftPanel.css';
+import district from '../images/district.png'
+import analyse from'../images/analyse.png'
+import mapLayer from '../images/mapLayer.png'
+import target from '../images/target.png'
 export default function LeftPanel() {
   
   const [layers, setLayers] = useState({});
@@ -12,29 +16,59 @@ export default function LeftPanel() {
 
 
   return (
-    <aside className='leftpanel'>
-      <section className='block'>
-        <h4 className='title'>
+    <div className='leftpanel'>
+      <div className='block' style={{marginTop:'-18px'}}>
+        <h4 className='title' >
+        <img
+            style={{
+              width: "18px",
+              height: "18px",
+              marginRight:'10px',
+              marginTop:'-3px',
+              marginLeft:'-15px'
+            }}
+            src={district}
+          ></img>
           Search District
         </h4>
-
-        <select className='select-district'>
+        <select className='select-district' style={{marginLeft:'-2px'}}>
           <option>Choose District</option>
         </select>
 
       </div>
-      <section className='block'>
-        <h4 className='title'> Analysis Tools </h4>
-        <span>Analyze a specific point below</span>
+      <div className='block' style={{marginTop:'-5px'}}>
+        <h4 className='title'>
+          <img
+            style={{
+              width: "17px",
+              height: "17px",
+              marginRight:'12px',
+              marginTop:'-3px',
+              marginLeft:'-15px'
+            }}
+            src={analyse}
+          ></img>
+           Analysis Tools </h4>
+        <h6 style={{fontSize:'12px',marginTop:'-4px', marginLeft:'-3px'}}>Analyze a specific point below</h6>
         <input className='input' placeholder='Latiitude'/>
         <input className='input' placeholder='Longitude'/>
         <button className='primary-button'>Analyze</button>
-      </section>
+      </div>
 
 
-      <section className="block">
+      <div className="block" style={{marginTop:'-5px'}}>
         <h3 className="block_title">
-          <span className="dot">●</span> Map Layers
+          <img
+            style={{
+              width: "17px",
+              height: "17px",
+              marginRight:'12px',
+              marginTop:'-3px',
+              marginLeft:'-15px'
+            }}
+            src={mapLayer}
+          ></img>
+           Map Layers
         </h3>
         <ul className="checklist">
           {[
@@ -58,10 +92,21 @@ export default function LeftPanel() {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
 
-      <section className='block'>
-          <h4 className='title'>Target Species</h4>
+      <div className='block' style={{marginTop:'-10px'}}>
+          <h4 className='title'>
+            <img
+            style={{
+              width: "17px",
+              height: "17px",
+              marginRight:'10px',
+              marginTop:'-3px',
+              marginLeft:'-15px'
+            }}
+            src={target}
+          ></img>
+            Target Species</h4>
           <ul className='checklist'>
             {["Sal" , 
               "Teak" ,
@@ -84,9 +129,9 @@ export default function LeftPanel() {
 
 
           </ul>
-        </section>
+        </div>
 
-        <div className='block-footer'>
+        <div className='block-footer' style={{marginTop:'-10px'}}>
           <button className='button-csv'>Export as CSV</button>
           <button className='button-pdf'>Export as PDF</button>   
 
@@ -96,7 +141,7 @@ export default function LeftPanel() {
 
 
 
-    </aside>
+    </div>
 
         
   )

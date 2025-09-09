@@ -1,0 +1,11 @@
+import React from 'react'
+
+function AboutUs() {
+  return (
+    <div>Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis soluta, ex rerum ipsum nesciunt voluptas eveniet dolorum impedit laboriosam commodi aliquid ab eos recusandae dolor qui sed, accusantium perferendis quae?lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem vero veritatis non doloribus vel hic quidem est aliq Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias, vitae quis maiores officiis doloremque sequi laboriosam natus. Reprehenderit, cum? Veritatis temporibus odit, repellat provident amet quibusdam alias vel fugiat?uid cum, debitis facere laboriosam ipsum ea exercitationem, harum inventore alias voluptate.dolor, sit amet consectetur adipisicing elit. Est, voluptatibus. Perspiciatis maiores asperiores ratione officia voluptate expedita quae ea recusandae quisquam architecto quos perferendis aperiam, eos, odit magni unde quLorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis soluta, ex rerum ipsum nesciunt voluptas eveniet dolorum impedit laboriosam commodi aliquid ab eos recusandae dolor qui sed, accusantium perferendis quae?lorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptatem vero veritatis non doloribus vel hic quidem est aliq Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias, vitae quis maiores officiis doloremque sequi laboriosam natus. Reprehenderit, cum? Veritatis temporibus odit, repellat provident amet quibusdam alias vel fugiat?uid cum, debitis facere laboriosam ipsum ea exercitationem, harum inventore alias voluptate.dolor, sit amet consectetur adipisicing elit. Est, voluptatibus. Perspiciatis maiores asperiores ratione officia voluptate expedita quae ea recusandae quisquam architecto quos perferendis aperiam, eos, odit magni unde quo!o!</div>
+  )
+}
+
+export default AboutUs
