@@ -4,7 +4,10 @@ import Vector1 from "../images/Vector1.png";
 import Vector2 from "../images/Vector2.png";
 import Vector3 from "../images/Vector3.png";
 import Vector4 from "../images/Vector4.png";
-import ForestFireGraph from './ForestFireGraph'
+import ForestFireGraph from './ForestFireGraph';
+import './CenterPart.scss';
+
+
 
 function CenterPart() {
   return (
@@ -102,8 +105,58 @@ function CenterPart() {
           <div className="new3" style={{marginRight:'60px'}}>yo</div>
         </div>
         <div class="d-flex justify-content-evenly">
-          <div className="new">Biodiversity in the location</div>
-          <div className="new">Illegal Activities happening in forest</div>
+          <div className="Biodiversity-panel">
+            <h5> Biodiversity in the Location </h5>
+            <div className="progressitem">
+              <span>Sal</span>
+              <div className="progress">
+                <div className="progressbar"  style={{ width: "75%"}}>
+                  75%
+                </div>
+              </div>
+            </div>
+            <div className="progressitem">
+              <span>Teak</span>
+              <div className="progress">
+                <div className="progressbar" style={{width: "60%"}}>
+                  60%
+                </div>
+              </div>
+
+            <div className="progressitem">
+              <span> Bamboo </span>
+              <div className="progress">
+                <div className="progressbar" style={{width: "45%"}}>
+                  45%
+                </div>
+
+              </div>
+            </div>
+
+
+            <div className="proogressitem">
+              <span>Eucalyptus</span>
+              <div className="progress">
+                <div className="progressbar" style={{width: "30%"}}>
+                  30%
+
+                </div>
+
+              </div>
+              
+            </div> 
+
+          </div>
+            
+        </div>
+
+
+
+
+          <div className="llegal Activities">Illegal Activities happening in forest</div>
+
+
+
         </div>
         <h4 style={{paddingLeft: '15px', paddingBottom: '18px'}}>Forest Services & Resources</h4>
         <div class="d-flex justify-content-evenly">
@@ -121,3 +174,4 @@ function CenterPart() {
 }
 
 export default CenterPart;
+
