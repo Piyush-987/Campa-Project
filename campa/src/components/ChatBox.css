@@ -10,13 +10,16 @@
   flex-direction: column;
   box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins';
+
+  height:calc(100vh-68px);
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 
 .chatbox-header {
+  height: calc(100vh-68px);
   color: black;
-  height: 92px;
-  
   justify-content: center;
   background: rgba(48, 109, 229, 0.2); 
   padding: 5px;

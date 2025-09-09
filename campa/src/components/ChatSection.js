@@ -1,12 +1,19 @@
 import React from 'react'
 import "./ChatBox.css";
-
+import chatbotimg from '../images/chatbotimg.png';
 function ChatBox (){
   return(
     <div className='rightChatbox'>
       
         <div className='chatbox-header'>
                
+      <img
+            style={{
+              width: "50px",
+              height: "50px",
+            }}
+            src={chatbotimg}
+          ></img>
 
         AI Forest Assistant 
       </div>
@@ -26,10 +33,10 @@ function ChatBox (){
 
         <div className='bot-message'>
           Sure. Here is the data you requested.
-          <ul>
+          
             <li>ABC</li>
             <li>XYZ</li>
-          </ul>
+          
         </div>
 
         <div className='user-message'>

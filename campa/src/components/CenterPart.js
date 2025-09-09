@@ -18,9 +18,9 @@ import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
 import plus from '../images/plus.png'
 import minus from '../images/minus.png'
-// import ElementLevels from './ElementLevels';
-// import Temperature from '../components/Temperature';
-// import AirQuality from '../components/AirQuality';
+import ElementLevels from './ElementLevels';
+import Temperature from '../components/Temperature';
+import AirQuality from '../components/AirQuality';
 function CenterPart() {
   return (
     <div className="center">
@@ -228,7 +228,7 @@ function CenterPart() {
               </h6>
               </div>
               <div>
-              {/* <AirQuality/> */}
+              <AirQuality/>
              </div>
             </div>
             <div className="four" id="four2" style={{ marginBottom: "-10px" }}>
@@ -238,7 +238,7 @@ function CenterPart() {
               </h6>
               </div>
               <div>
-              {/* <Temperature/> */}
+              <Temperature/>
              </div>
               
             </div>
@@ -291,7 +291,7 @@ function CenterPart() {
             className="bigg d-flex justify-content-center align-items-center"
             style={{ marginTop: "-10px" }}
           >
-            {/* <ElementLevels /> */}
+            <ElementLevels />
           </div></div>
       </div>
       <div class="d-flex justify-content-evenly">
