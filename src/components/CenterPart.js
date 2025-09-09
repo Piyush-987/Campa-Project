@@ -153,7 +153,15 @@ function CenterPart() {
 
 
 
-          <div className="llegal Activities">Illegal Activities happening in forest</div>
+          <div className="llegal Activities">Illegal Activities happening in forest
+            <h5>Illegal Activities happening in forest</h5>
+                <div className="illegal-grid">
+                  <div className="illegal-tile">Illegal Logging</div>
+                  <div className="illegal-tile">Encroachment</div>
+                  <div className="illegal-tile">Poaching</div>
+                  <div className="illegal-tile">Mining</div>
+                </div>
+          </div>
 
 
 
