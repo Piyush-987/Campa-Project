@@ -534,6 +534,7 @@ function CenterPart() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
