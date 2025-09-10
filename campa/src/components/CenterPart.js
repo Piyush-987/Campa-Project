@@ -27,6 +27,9 @@ import left from '../images/left.png';
 import right from '../images/right.png';
 import red from '../images/red.png';
 import Granularity from '../components/Granularity';
+import BiodiversityPanel from "./BiodiversityPanel";
+import IllegalActivityPanel from "./IllegalActivityPanel";
+
 function CenterPart() {
   return (
     <div className="center">
@@ -465,6 +468,13 @@ function CenterPart() {
       <div class="d-flex justify-content-evenly" style={{marginTop:'35px'}}>
         <div className="new">Biodiversity in the location</div>
         <div className="new">Illegal Activities happening in forest</div>
+      <div className="d-flex justify-content-evenly align-items-stretch" style={{ gap: "20px" }}>
+       <div className="dashboard-card">
+         <BiodiversityPanel />
+        </div>
+      <div className="dashboard-card">
+         <IllegalActivityPanel />
+        </div>
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         Forest Services & Resources
