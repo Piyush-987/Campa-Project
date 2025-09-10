@@ -21,6 +21,9 @@ import minus from '../images/minus.png'
 import ElementLevels from './ElementLevels';
 import Temperature from '../components/Temperature';
 import AirQuality from '../components/AirQuality';
+import BiodiversityPanel from "./BiodiversityPanel";
+import IllegalActivityPanel from "./IllegalActivityPanel";
+
 function CenterPart() {
   return (
     <div className="center">
@@ -338,9 +341,13 @@ function CenterPart() {
           ></img>
         </div>
       </div>
-      <div class="d-flex justify-content-evenly">
-        <div className="new">Biodiversity in the location</div>
-        <div className="new">Illegal Activities happening in forest</div>
+      <div className="d-flex justify-content-evenly align-items-stretch" style={{ gap: "20px" }}>
+       <div className="dashboard-card">
+         <BiodiversityPanel />
+        </div>
+      <div className="dashboard-card">
+         <IllegalActivityPanel />
+        </div>
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         Forest Services & Resources

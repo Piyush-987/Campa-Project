@@ -1,0 +1,92 @@
+.biodiversity-panel {
+  width: 500px;
+  height: 356px;
+  background: #f9fff9;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // spreads header, list, footer evenly
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  h4 {
+    text-align: center;
+    
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .species-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px; // spacing between rows
+  }
+
+  .species-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .species-name {
+      flex: 0 0 70px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .species-bar {
+      flex: 1;
+      height: 16px;
+      background: #e6e6e6;
+      border-radius: 8px;
+      overflow: hidden;
+
+      .species-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #6dbf4b, #a4e57e);
+        border-radius: 8px;
+        width: 0;
+        transition: width 1.5s ease-in-out;
+      }
+    }
+
+    .species-range {
+      flex: 0 0 70px;
+      text-align: right;
+      font-weight: 600;
+      color: #007bff;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  }
+
+  .recommendation {
+    margin-top: 10px;
+    padding: 10px;
+    background: #d7f9d7;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align:center;
+  }
+}
+
+
+
+    .species-range {
+      flex: 0 0 70px; // fixed width so percentages align neatly
+      text-align: right;
+      font-weight: 600;
+      color: #007bff;
+    }
+  
+
+  .recommendation {
+    margin-top: 24px;
+    padding: 12px 16px;
+    background: #9df79d;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+  }
