@@ -1,0 +1,16 @@
+.biodiversity-panel,
+.illegal-activity-panel {
+  flex: 0 0 48%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  // Option 1: Fit to content
+  height: auto;
+  min-height: auto;
+
+  // Option 2: Uniform card style
+  // height: 280px; 
+}
