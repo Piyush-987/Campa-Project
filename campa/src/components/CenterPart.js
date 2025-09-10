@@ -353,7 +353,7 @@ function CenterPart() {
         Forest Services & Resources
       </h4>
       <div class="d-flex justify-content-evenly" style={{fontSize:'20px'}}>
-        <div
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           
         >
@@ -365,7 +365,7 @@ function CenterPart() {
             src={trees}
           ></img>
           <h6 style={{ paddingTop: "6px", paddingLeft: "8px", fontSize:'20px' }}>Campa Projects</h6>
-        </div>
+        </button>
         <div
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontWeight: "600" }}
