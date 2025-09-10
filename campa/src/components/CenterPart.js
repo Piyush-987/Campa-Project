@@ -465,16 +465,38 @@ function CenterPart() {
 
         </div>
       </div>
-      <div class="d-flex justify-content-evenly" style={{marginTop:'35px'}}>
-        <div className="new">Biodiversity in the location</div>
-        <div className="new">Illegal Activities happening in forest</div>
-      <div className="d-flex justify-content-evenly align-items-stretch" style={{ gap: "20px" }}>
-       <div className="dashboard-card">
-         {/* <BiodiversityPanel /> */}
-        </div>
-      <div className="dashboard-card">
-         {/* <IllegalActivityPanel /> */}
-        </div>
+      <div class="d-flex justify-content-evenly align-items-stretch" style={{marginTop:'35px' , gap:'20px'}}>
+        <div className="new">
+          <div className="d-flex justify-content-center">
+          <BiodiversityPanel />
+          </div>
+          <div className=" d-flex justify-content-center" >
+            <div>
+
+
+
+            </div>
+          </div>
+          </div>
+        <div className="new ">
+          <div className="d-flex justify-content-center">
+          <IllegalActivityPanel />
+          </div>
+          <div className=" d-flex justify-content-center">
+            <div>
+
+              
+
+            </div>
+          </div>
+          </div>
+      {/* <div className="d-flex justify-content-evenly align-items-stretch" style={{ gap: "20px" }}> */}
+       {/* <div className="dashboard-card"> */}
+         
+        {/* </div> */}  
+      {/* <div className="dashboard-card"> */}
+         
+        {/* </div> */}
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         Forest Services & Resources
@@ -493,7 +515,7 @@ function CenterPart() {
           ></img>
           <h6 style={{ paddingTop: "6px", paddingLeft: "8px", fontSize:'20px' }}>Campa Projects</h6>
         </button>
-        <div
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontWeight: "600" }}
         >
@@ -505,8 +527,8 @@ function CenterPart() {
             src={elephant}
           ></img>
           <h6 style={{ paddingTop: "7px", paddingLeft: "8px", fontSize:'20px' }}>Elephant Tracker</h6>
-        </div>
-        <div
+        </button>
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontSize: "900" }}
         >
@@ -518,8 +540,8 @@ function CenterPart() {
             src={carbonmap}
           ></img>
           <h6 style={{ paddingTop: "7px", paddingLeft: "8px", fontSize:'20px' }}>Places to visit</h6>
-        </div>
-        <div
+        </button>
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontWeight: "600" }}
         >
@@ -531,9 +553,9 @@ function CenterPart() {
             src={leaf}
           ></img>
           <h6 style={{ paddingTop: "6px", paddingLeft: "8px", fontSize:'20px' }}>Protected Area</h6>
-        </div>
+        </button>
       </div>
-    </div>
+    
     </div>
   );
 }
