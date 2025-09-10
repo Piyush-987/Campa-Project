@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './BiodiversityPanel.scss';
+import './BiodiversityPanel.css';
 
 function BiodiversityPanel() {
   const speciesData = [

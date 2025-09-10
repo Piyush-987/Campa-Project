@@ -1,68 +1,73 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-const text='45'
-// This is a placeholder for your SVG. You would replace this with your actual SVG code.
-// The key parts are the 'needle' path and the text element for the number.
-const GaugeSVG = ({ value }) => (
-  <svg width="200" height="200" viewBox="0 0 200 200">
-    {/* The semi-circular track (the background gradient part) */}
-    <path
-      d="M10 100 A90 90 0 0 1 190 100"
-      stroke="url(#gradient)"
-      strokeWidth="20"
-      fill="none"
-    />
-    <defs>
-      {/* Define the gradient for the track */}
-      <linearGradient id="gradient">
-        <stop offset="0%" stopColor="#4CAF50" />
-        <stop offset="50%" stopColor="#FFC107" />
-        <stop offset="100%" stopColor="#F44336" />
-      </linearGradient>
-    </defs>
-    
-    {/* The needle. We'll rotate this based on the value. */}
-    <motion.path
-    //   d="M100 100 L100 20 A5 5 0 0 1 105 100 Z"
-      fill="#555"
-      
-    //   initial={{ rotate: -90 }}
-    //   animate={{ rotate: -90 + (value / 100) * 180 }}
-    //   transition={{ duration: 1 }}
-      style={{ transformOrigin: 'center' }}
-    />
+import React from "react";
 
-    {/* The value text. Use AnimatePresence for a nice fade effect. */}
-    <AnimatePresence>
-      <motion.text
-      
-        key={text}
-        x="100"
-        y="120"
-        fontSize="48"
-        fontWeight="bold"
-        textAnchor="middle"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-      >
-        {value}
-      </motion.text>
-    </AnimatePresence>
-    
-    {/* The "Good Air Quality" text */}
-    <text x="100" y="160" fontSize="16" textAnchor="middle" fill="#555">
-      Good Air Quality
-    </text>
-  </svg>
-);
+const AirQualityGauge = () => {
+  const centerX = 95;
+  const centerY = 100;
+  const radius = 75;
 
-const AnimatedGauge = ({ airQualityValue }) => {
+  const fillAngle = 110; // how much arc to fill
+  const startAngle = 180; // leftmost point
+  const endAngle = startAngle + fillAngle; // = 20°
+
+  // Start coordinates (-90°)
+  const startX = centerX + radius * Math.cos((startAngle * Math.PI) / 180);
+  const startY = centerY + radius * Math.sin((startAngle * Math.PI) / 180);
+
+  // End coordinates (20°)
+  const endX = centerX + radius * Math.cos((endAngle * Math.PI) / 180);
+  const endY = centerY + radius * Math.sin((endAngle * Math.PI) / 180);
+
+  const largeArcFlag = fillAngle > 180 ? 1 : 0;
+
   return (
-    <div style={{ width: 200, height: 200, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <GaugeSVG value={airQualityValue} />
+    <div
+      style={{
+        width: "190px",
+        height: "150px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontFamily: "sans-serif",
+        marginLeft:'5px'
+      }}
+    >
+      <svg width="190" height="100" viewBox="0 0 190 100">
+        {/* Background arc */}
+        <path
+          d="M20,100 A75,75 0 0,1 170,100"
+          fill="none"
+          stroke="#ddd"
+          strokeWidth="17"
+        />
+
+        {/* Filled arc (0° → 110° sweep) */}
+        <path
+          d={`M${startX},${startY} A${radius},${radius} 0 ${largeArcFlag},1 ${endX},${endY}`}
+          fill="none"
+          stroke="url(#gradient)"
+          strokeWidth="18"
+          strokeLinecap="round"
+        />
+
+        {/* Reversed Gradient */}
+        <defs>
+          <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+            <stop offset="0%" stopColor="#E67E22" />  {/* right side */}
+            <stop offset="50%" stopColor="#F5D300" />
+            <stop offset="100%" stopColor="#3BB54A" /> {/* left side */}
+          </linearGradient>
+        </defs>
+      </svg>
+
+      {/* Value */}
+      <div style={{ fontSize: "30px", fontWeight: "bold", marginTop: "-35px" }}>
+        45
+      </div>
+
+      {/* Label */}
+      <div style={{ fontSize: "14px", color: "#555",marginTop: "10px" }}>Good Air Quality</div>
     </div>
   );
 };
 
-export default AnimatedGauge;
+export default AirQualityGauge;

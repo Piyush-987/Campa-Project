@@ -1,5 +1,5 @@
 import React from 'react';
-import './IllegalActivityPanel.scss';
+import './IllegalActivityPanel.css';
 
 
 import encroachment from "../images/Encrochment.png";
