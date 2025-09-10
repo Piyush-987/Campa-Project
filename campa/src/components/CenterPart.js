@@ -21,6 +21,12 @@ import minus from '../images/minus.png'
 import ElementLevels from './ElementLevels';
 import Temperature from '../components/Temperature';
 import AirQuality from '../components/AirQuality';
+import Pressure from '../components/Pressure';
+import rain from '../images/rain.png';
+import left from '../images/left.png';
+import right from '../images/right.png';
+import red from '../images/red.png';
+import Granularity from '../components/Granularity';
 function CenterPart() {
   return (
     <div className="center">
@@ -104,7 +110,7 @@ function CenterPart() {
       <h4 style={{ paddingLeft: "15px", marginBottom: "18px" }}>
         Forest Intelligence Dashboard
       </h4>
-      <h6 style={{right:'0', marginLeft:'500px'}}>Generate Report</h6>
+      <h6 style={{ marginLeft:'557px'}}>Generate Report</h6>
       </div>
       <div class="d-flex justify-content-evenly">
         <div className="new1" id="box1" style={{ fontWeight: "600" }}>
@@ -224,7 +230,7 @@ function CenterPart() {
               style={{ marginRight: "30px", marginBottom: "-10px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              Temperature
+              Air Quality
               </h6>
               </div>
               <div>
@@ -242,15 +248,37 @@ function CenterPart() {
              </div>
               
             </div>
-            <div
-              className="four"
-              id="four3"
-              style={{ marginRight: "30px", marginTop: "-5px" }}
-            >
-              3
+            <div className="four" id="four3" style={{marginRight:'30px', marginTop: "-5px" }}>
+              <div className="climateHeadinng d-flex justify-content-center">
+              <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
+              Precipitation
+              </h6>
+              </div>
+              <div className="rain d-flex justify-content-center">
+              <img
+            style={{
+              marginTop: '15px',
+              marginBottom: "20px",
+              width: "60px",
+              height: "60px",
+            }}
+            src={rain}
+          ></img>
+             </div>
+              <div className="valuehere d-flex justify-content-center">
+                <strong style={{fontSize:'30px'}}>21.99mm </strong>
+              </div>
             </div>
             <div className="four" id="four4" style={{ marginTop: "-5px" }}>
-              4
+              <div className="climateHeadinng d-flex justify-content-center">
+              <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
+              Pressure
+              </h6>
+              </div>
+              <div>
+              <Pressure/>
+             </div>
+              
             </div>
           </div>
         </div>
@@ -295,40 +323,120 @@ function CenterPart() {
           </div></div>
       </div>
       <div class="d-flex justify-content-evenly">
-        <div className="new2 d-flex justify-content-center">
-          <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>Soil Characteristics</h6>
+        <div className="new2">
+         <div className=" d-flex justify-content-center">
+            <h6 style={{paddingLeft:'350px',paddingRight:'350px', fontSize: "20px", paddingTop: "12px" }}>
+              Soil Characteristics
+            </h6>
           </div>
-          <div className="soil d-flex justify-content-evenly">
-          <div className="soilpart">
-            yo
-          </div>
+          <div className="d-flex justify-content-evenly align-items-center" style={{marginTop: "10px"}}>
+            <div className=" redsoil d-flex justify-content-center" style={{width:'435px', height:'185px', borderRadius:'10px'}}>
+              <div style={{ width:'125px', height:'183.5px' , borderRadius:'10px 0px 0px 10px'}}>
 
-          <div className="soilpart">
-            yo
+            <img
+            style={{
+              width: "125px",
+              height: "183.5px",
+            }}
+            src={red}
+          ></img>
+
+              </div>
+              <div  style={{ width:'308px', height:'183.5px' , borderRadius:'0px 10px 10px 0px', padding:'10px'}}>
+                <div className="d-flex justify-content-center" >
+                <h6 style={{marginBottom:'13px', fontSize:'18px'}}>Red Soil</h6>
+                </div>
+                <div>
+                <li>It’s partially red because of ferric oxide.</li>
+                <li>Rich in Iron content.</li>
+                <li>Has moderate fertility for crops.</li>
+                <li>Good water holding capacity.</li>
+                <li>Contains a pH level from 6.6 to 8.0</li>
+              </div>
+              </div>
+            </div>
+            <div className=" granularity d-flex justify-content-center" style={{width:'435px', height:'185px', borderRadius:'10px'}}>
+              <div style={{ width:'240px', height:'183.5px' , borderRadius:'10px 0px 0px 10px'}}>
+
+            <Granularity/>
+
+              </div>
+              <div  style={{ width:'195px', height:'183.5px' , borderRadius:'0px 10px 10px 0px', padding:'10px'}}>
+                <div className="d-flex justify-content-center" >
+                <h6 style={{marginBottom:'13px', fontSize:'19px', marginRight:'17px'}}>Granularity</h6>
+                </div>
+            <div className="d-flex justify-content-center" style={{marginTop:'20px'}}>
+                <div style={{fontSize:'22px'}}>
+                  Sand   5.2%
+                </div>
+              
+              
+                <div style={{fontSize:'22px'}}>
+                  Slit  30%
+                </div>
+
+
+                <div style={{fontSize:'22px'}}>
+                  Clay  9.8%
+                </div>
+            </div>
+              </div>
+              </div>
+            
           </div>
           </div>
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         Photo Gallery
       </h4>
-      <div class="d-flex justify-content-between">
-        <div className="new3" style={{ marginLeft: "60px" }}>
+      <div class="d-flex justify-content-between align-items-center">
+        <div style={{width:'35px', height:'35px', borderRadius:'5px'}}>
+
+            <img
+            style={{
+              width: "35px",
+              height: "35px",
+              marginLeft:"18px"
+            }}
+            src={left}
+          ></img>
+
+        </div>
+        <div className="new3" style={{ marginLeft: "25px" }}>
+          <div className="chatra d-flex justify-content-center" style={{ marginLeft:'205px', borderRadius:'5px 10px 5px 5px',position:'absolute',zIndex:'100',width:'60px', height:'25px', background:'rgba(250,250,250,0.85)'}}>
+            <h6>Chatra</h6>
+            </div>
           <img
             style={{
               width: "265px",
               height: "200px",
+              position:'relative'
             }}
             src={image1}
           ></img>
+        <div className="d-flex align-items-center" style={{ paddingLeft:'8px',width:'265px', height:'35px', backgroundColor:'rgba(250, 250, 250, 0.8)', borderRadius:'0px 0px 10px 10px'}}>
+            <h6 >11 Jan 2025</h6>
+            <h6 style={{marginLeft:'135px'}}>14:00</h6>
         </div>
-        <div className="new3"><img
+        </div>
+        <div className="new3">
+          <div className="chatra d-flex justify-content-center" style={{ marginLeft:'201px', borderRadius:'5px 10px 5px 5px',position:'absolute',width:'64px', height:'25px', background:'rgba(250,250,250,0.85)'}}>
+            <h6>Palamu</h6>
+            </div><img
             style={{
               width: "265px",
               height: "200px",
             }}
             src={image2}
-          ></img></div>
-        <div className="new3" style={{ marginRight: "60px" }}>
+          ></img>
+          <div className="d-flex align-items-center"style={{ paddingLeft:'8px',width:'265px', height:'35px', backgroundColor:'rgba(250, 250, 250, 0.8)', borderRadius:'0px 0px 10px 10px'}}>
+            <h6 >15 Mar 2025</h6>
+            <h6 style={{marginLeft:'135px'}}>16:00</h6>
+        </div></div>
+        <div className="new3" style={{ marginRight: "8px" }}>
+          <div className="chatra d-flex justify-content-center" style={{ marginLeft:'205px', borderRadius:'5px 10px 5px 5px',position:'absolute',zIndex:'100',width:'60px', height:'25px', background:'rgba(250,250,250,0.85)'}}>
+            <h6>Gumla</h6>
+            </div>
           <img
             style={{ 
               width: "265px",
@@ -336,9 +444,25 @@ function CenterPart() {
             }}
             src={image3}
           ></img>
+          <div className="d-flex align-items-center"style={{paddingLeft:'8px',width:'265px', height:'35px', backgroundColor:'rgba(250, 250, 250, 0.8)', borderRadius:'0px 0px 10px 10px'}}>
+            <h6 >18 May 2025</h6>
+            <h6 style={{marginLeft:'135px'}}>19:00</h6>
+        </div>
+        </div>
+        <div style={{width:'35px', height:'35px', borderRadius:'5px', marginRight:'18px'}}>
+
+            <img
+            style={{
+              width: "35px",
+              height: "35px",
+              
+            }}
+            src={right}
+          ></img>
+
         </div>
       </div>
-      <div class="d-flex justify-content-evenly">
+      <div class="d-flex justify-content-evenly" style={{marginTop:'35px'}}>
         <div className="new">Biodiversity in the location</div>
         <div className="new">Illegal Activities happening in forest</div>
       </div>

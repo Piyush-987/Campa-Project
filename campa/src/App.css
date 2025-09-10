@@ -68,7 +68,7 @@ font-family:'Poppins';
 .new2{
   margin-bottom:18px;
   width:955px;
-  height:300px;
+  height:270px;
   border: 1px solid #E8E8E8;
   border-radius: 10px;
 }
@@ -177,7 +177,7 @@ background: rgba(235, 235, 235, 0.85);
 border: 0.2px solid #000000;
 border-radius: 15px;
 }
-.over1{
+ .over1{
   padding:0px 2px 2px 7px;
   width:74px;
   height:26px;
@@ -204,10 +204,10 @@ border: 0.5px solid #000000;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 border-radius: 3px;
 }
-.over4{
-  padding:2px 2px 2px 7px;
-  width:34px;
-  height:30px;
+ .over4{
+padding:2px 2px 2px 7px;
+width:34px;
+height:30px;
   background: rgba(0, 0, 0, 0);
 border-radius: 3px;
 }
@@ -221,4 +221,14 @@ border-radius: 3px;
 .soilpart{
   width: 100px;
   height: 100px;
+  background-color: red;
+} 
+.redsoil{
+  background: linear-gradient(109.29deg, rgba(255, 255, 255, 0.2) 60.96%, rgba(255, 0, 0, 0.2) 139.15%);
+border: 0.5px solid rgba(0, 0, 0, 0.2);
+
+}
+.granularity{
+  background: linear-gradient(90.77deg, rgba(255, 255, 255, 0.15) 49.77%, rgba(17, 104, 104, 0.15) 108.69%);
+border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
