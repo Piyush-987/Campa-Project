@@ -44,9 +44,9 @@ function CenterPart() {
           ></img>
         </div>
         <div>
-          <p>Jharkhand Forest Intelligence Map</p>
+          <p><strong>Jharkhand Forest Intelligence Map</strong></p>
           <p style={{ fontSize: "13px", marginTop: "-18px" }}>
-            {" "}
+            
             Click anywhere on the map for real forest analysis
           </p>
         </div>
@@ -111,9 +111,9 @@ function CenterPart() {
       </div>
       <div className="intelligence d-flex align-items-center">
       <h4 style={{ paddingLeft: "15px", marginBottom: "18px" }}>
-        Forest Intelligence Dashboard
+        <strong>Forest Intelligence Dashboard</strong>
       </h4>
-      <h6 style={{ marginLeft:'557px'}}>Generate Report</h6>
+      <h6 style={{ marginLeft:'535px'}}>Generate Report</h6>
       </div>
       <div class="d-flex justify-content-evenly">
         <div className="new1" id="box1" style={{ fontWeight: "600" }}>
@@ -214,13 +214,13 @@ function CenterPart() {
         </div>
       </div>
       <h4 style={{ paddingLeft: "15px", marginBottom: "18px" }}>
-        Real Time AI Analysis
+        <strong>Real Time AI Analysis</strong>
       </h4>
       <div class="d-flex justify-content-evenly">
         <div className="new">
           <div className="climateHeadinng d-flex justify-content-center">
             <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>
-              Climate Changes
+              <strong>Climate Changes</strong>
             </h6>
           </div>
           <div
@@ -233,7 +233,7 @@ function CenterPart() {
               style={{ marginRight: "30px", marginBottom: "-10px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              Air Quality
+              <strong>Air Quality</strong>
               </h6>
               </div>
               <div>
@@ -243,7 +243,7 @@ function CenterPart() {
             <div className="four" id="four2" style={{ marginBottom: "-10px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              Temperature
+              <strong>Temperature</strong>
               </h6>
               </div>
               <div>
@@ -254,7 +254,7 @@ function CenterPart() {
             <div className="four" id="four3" style={{marginRight:'30px', marginTop: "-5px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              Precipitation
+              <strong>Precipitation</strong>
               </h6>
               </div>
               <div className="rain d-flex justify-content-center">
@@ -275,7 +275,7 @@ function CenterPart() {
             <div className="four" id="four4" style={{ marginTop: "-5px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              Pressure
+              <strong>Pressure</strong>
               </h6>
               </div>
               <div>
@@ -288,7 +288,7 @@ function CenterPart() {
         <div className="new">
           <div className="climateHeadinng d-flex justify-content-center">
             <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>
-              Forest Fire
+              <strong>Forest Fire</strong>
             </h6>
           </div>
           <div
@@ -303,7 +303,7 @@ function CenterPart() {
         <div className="new">
           <div className="climateHeadinng d-flex justify-content-center">
             <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>
-              Forest Distribution Chart
+              <strong>Forest Distribution Chart</strong>
             </h6>
           </div>
           <div
@@ -315,7 +315,7 @@ function CenterPart() {
         </div>
         <div className="new"><div className="climateHeadinng d-flex justify-content-center">
             <h6 style={{ fontSize: "20px", paddingTop: "12px" }}>
-              Element Levels in Soil
+              <strong>Element Levels in Soil</strong>
             </h6>
           </div>
           <div
@@ -329,7 +329,7 @@ function CenterPart() {
         <div className="new2">
          <div className=" d-flex justify-content-center">
             <h6 style={{paddingLeft:'350px',paddingRight:'350px', fontSize: "20px", paddingTop: "12px" }}>
-              Soil Characteristics
+              <strong>Soil Characteristics</strong>
             </h6>
           </div>
           <div className="d-flex justify-content-evenly align-items-center" style={{marginTop: "10px"}}>
@@ -347,7 +347,7 @@ function CenterPart() {
               </div>
               <div  style={{ width:'308px', height:'183.5px' , borderRadius:'0px 10px 10px 0px', padding:'10px'}}>
                 <div className="d-flex justify-content-center" >
-                <h6 style={{marginBottom:'13px', fontSize:'18px'}}>Red Soil</h6>
+                <h6 style={{marginBottom:'13px', fontSize:'18px'}}><strong>Red Soil</strong></h6>
                 </div>
                 <div>
                 <li>It’s partially red because of ferric oxide.</li>
@@ -366,7 +366,7 @@ function CenterPart() {
               </div>
               <div  style={{ width:'195px', height:'183.5px' , borderRadius:'0px 10px 10px 0px', padding:'10px'}}>
                 <div className="d-flex justify-content-center" >
-                <h6 style={{marginBottom:'13px', fontSize:'19px', marginRight:'17px'}}>Granularity</h6>
+                <h6 style={{marginBottom:'13px', fontSize:'19px', marginRight:'17px'}}><strong>Granularity</strong></h6>
                 </div>
             <div className="d-flex justify-content-center" style={{marginTop:'20px'}}>
                 <div style={{fontSize:'22px'}}>
@@ -390,7 +390,7 @@ function CenterPart() {
           </div>
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
-        Photo Gallery
+        <strong>Photo Gallery</strong>
       </h4>
       <div class="d-flex justify-content-between align-items-center">
         <div style={{width:'35px', height:'35px', borderRadius:'5px'}}>
@@ -468,7 +468,7 @@ function CenterPart() {
       <div class="d-flex justify-content-evenly" style={{marginTop:'35px'}}>
         <div className="new">
           <div className="d-flex justify-content-center">
-          <h6 style={{padding:'10px'}}>Biodiversity in the location</h6>
+          <h6 style={{padding:'10px'}}><strong>Biodiversity in the location</strong></h6>
           </div>
           <div className=" d-flex justify-content-center" >
             <div>
@@ -480,7 +480,7 @@ function CenterPart() {
           </div>
         <div className="new ">
           <div className="d-flex justify-content-center">
-          <h6 style={{padding:'10px'}}>Illegal Activities happening in forest</h6>
+          <h6 style={{padding:'10px'}}><strong>Illegal Activities happening in forest</strong></h6>
           </div>
           <div className=" d-flex justify-content-center">
             <div>
@@ -499,7 +499,7 @@ function CenterPart() {
         {/* </div> */}
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
-        Forest Services & Resources
+        <strong>Forest Services & Resources</strong>
       </h4>
       <div class="d-flex justify-content-evenly" style={{fontSize:'20px'}}>
         <div
