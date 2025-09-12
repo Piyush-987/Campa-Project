@@ -466,7 +466,7 @@ function CenterPart() {
         </div>
       </div>
       <div class="d-flex justify-content-evenly align-items-stretch" style={{marginTop:'35px' , gap:'20px'}}>
-        <div className="new">
+        <div className="new5">
           <div className="d-flex justify-content-center">
           <BiodiversityPanel />
           </div>
@@ -478,7 +478,7 @@ function CenterPart() {
             </div>
           </div>
           </div>
-        <div className="new ">
+        <div className="new5 ">
           <div className="d-flex justify-content-center">
           <IllegalActivityPanel />
           </div>
