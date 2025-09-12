@@ -465,10 +465,11 @@ function CenterPart() {
 
         </div>
       </div>
-      <div class="d-flex justify-content-evenly" style={{marginTop:'35px'}}>
+      <div class="d-flex justify-content-evenly align-items-stretch" style={{marginTop:'35px' , gap:'20px'}}>
         <div className="new">
           <div className="d-flex justify-content-center">
           <h6 style={{padding:'10px'}}><strong>Biodiversity in the location</strong></h6>
+          <BiodiversityPanel />
           </div>
           <div className=" d-flex justify-content-center" >
             <div>
@@ -480,6 +481,7 @@ function CenterPart() {
           </div>
         <div className="new ">
           <div className="d-flex justify-content-center">
+          <IllegalActivityPanel />
           <h6 style={{padding:'10px'}}><strong>Illegal Activities happening in forest</strong></h6>
           </div>
           <div className=" d-flex justify-content-center">
@@ -492,17 +494,17 @@ function CenterPart() {
           </div>
       {/* <div className="d-flex justify-content-evenly align-items-stretch" style={{ gap: "20px" }}> */}
        {/* <div className="dashboard-card"> */}
-         {/* <BiodiversityPanel /> */}
+         
         {/* </div> */}  
       {/* <div className="dashboard-card"> */}
-         {/* <IllegalActivityPanel /> */}
+         
         {/* </div> */}
       </div>
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         <strong>Forest Services & Resources</strong>
       </h4>
       <div class="d-flex justify-content-evenly" style={{fontSize:'20px'}}>
-        <div
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           
         >
@@ -514,8 +516,8 @@ function CenterPart() {
             src={trees}
           ></img>
           <h6 style={{ paddingTop: "6px", paddingLeft: "8px", fontSize:'20px' }}>Campa Projects</h6>
-        </div>
-        <div
+        </button>
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontWeight: "600" }}
         >
@@ -527,8 +529,8 @@ function CenterPart() {
             src={elephant}
           ></img>
           <h6 style={{ paddingTop: "7px", paddingLeft: "8px", fontSize:'20px' }}>Elephant Tracker</h6>
-        </div>
-        <div
+        </button>
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontSize: "900" }}
         >
@@ -540,8 +542,8 @@ function CenterPart() {
             src={carbonmap}
           ></img>
           <h6 style={{ paddingTop: "7px", paddingLeft: "8px", fontSize:'20px' }}>Places to visit</h6>
-        </div>
-        <div
+        </button>
+        <button
           className="new4 d-flex align-items-center justify-content-center"
           style={{ fontWeight: "600" }}
         >
@@ -553,7 +555,7 @@ function CenterPart() {
             src={leaf}
           ></img>
           <h6 style={{ paddingTop: "6px", paddingLeft: "8px", fontSize:'20px' }}>Protected Area</h6>
-        </div>
+        </button>
       </div>
     
     </div>
