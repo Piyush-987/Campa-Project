@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import img1 from "../images/img1.jpg";
 import globe from "../images/globe.png";
 import satellite from "../images/satellite.png";
@@ -140,33 +141,19 @@ function CenterPart() {
                 </h6>
               </div>
               <div>
-                <Temperature />
-              </div>
+              <Temperature/>
+             </div>
+              
             </div>
-            <div
-              className="four"
-              id="four3"
-              style={{ marginRight: "30px", marginTop: "-5px" }}
-            >
-
-              <Precipitation/>
-
-
-              <div className="rain d-flex justify-content-center">
-                <img
-                  style={{
-                    marginTop: "15px",
-                    marginBottom: "20px",
-                    width: "60px",
-                    height: "60px",
-                  }}
-                  src={rain}
-                ></img>
-              </div>
+            {/* <div className="four" id="four3" style={{marginRight:'30px', marginTop: "-5px" }}>
+              <div className="climateHeadinng d-flex justify-content-center">
+              
+             </div>
               <div className="valuehere d-flex justify-content-center">
                 <strong style={{ fontSize: "30px" }}>21.99mm </strong>
               </div>
-            </div>
+            </div> */}
+            <Precipitation/>
             <div className="four" id="four4" style={{ marginTop: "-5px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
                 <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
