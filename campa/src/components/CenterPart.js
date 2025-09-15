@@ -31,7 +31,7 @@ import Precipitation from "./Precipitation";
 function CenterPart() {
   return (
     <div className="center">
-      <div className="heading">
+      <div className="heading justify-content-evenly">
         <div style={{ marginRight: "8px", paddingTop: "5px" }}>
           <img
             style={{
@@ -72,12 +72,12 @@ function CenterPart() {
           </h6>
         </div>
       </div>
-      <div className="image-container" style={{ position: "relative" }}>
+      <div className="image-container d-flex justify-content-center" style={{ position: "relative" }}>
         <img
           style={{
-            marginLeft: "18px",
+            marginLeft: "0px",
             marginBottom: "18px",
-            width: "950px",
+            width: "100%",
             height: "300px",
           }}
           src={img1}
@@ -148,6 +148,7 @@ function CenterPart() {
               id="four3"
               style={{ marginRight: "30px", marginTop: "-5px" }}
             >
+
               <Precipitation/>
 
 

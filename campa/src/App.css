@@ -23,8 +23,8 @@ font-family:'Poppins';
   font-size: 19px;;
   flex-direction: row;
   background-color:#f0f0f0;
-  height:70px;
-  width:987px;
+  max-height:10vh;
+  max-width:100%;
   padding-left: 15px;
   padding-top: 12px;
   margin-bottom: 18px;
@@ -34,6 +34,12 @@ font-family:'Poppins';
   margin-right: 300px; 
   height: cacl(100vh-68px);
   flex:1;
+
+  flex-wrap: wrap;       /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers the items */
+  gap: 20px;             /* Space between items */
+  /* padding: 20px; */
+  max-width: 63%; 
   
 }
  .bell{

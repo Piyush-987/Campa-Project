@@ -28,13 +28,13 @@ function Navbar() {
         </li>
         <div style={{ alignItems:'center'}} className="d-flex" role="search">
         <input style={{width:'340px', borderRadius:'20px 0px 0px 20px', opacity:'60%', color:'white'}} className="form-control" type="search" placeholder="Search" aria-label="Search"/>
-     <div style={{display:'flex'}}> <i className="magnify fa-solid fa-magnifying-glass" style={{padding:'10px',opacity:'60%',backgroundColor:'white',width:'37.6px', height:'37.6px', borderRadius:'0px 20px 20px 0px'}}></i>
+     <div style={{display:'flex'}}> <i className="magnify fa-solid fa-magnifying-glass" style={{padding:'10px',opacity:'60%',backgroundColor:'white',width:'37.6px', height:'37.6px', borderRadius:'0px 20px 20px 0px', position:'relative'}}></i>
       </div>
       </div>
       </ul>
-      <i className=" bell fa-regular fa-bell fa-lg" style={{color:'white'}}></i>
-      <i className="settings fa-solid fa-gear fa-lg" style={{color:'white'}}></i>
-      <i className=" user fa-regular fa-circle-user fa-lg" style={{color:'white'}}></i>
+      <i className=" bell fa-regular fa-bell fa-lg" style={{color:'white', position:'relative'}}></i>
+      <i className="settings fa-solid fa-gear fa-lg" style={{color:'white', position:'relative'}}></i>
+      <i className=" user fa-regular fa-circle-user fa-lg" style={{color:'white', position:'relative'}}></i>
     </div>
   </div>
 </nav>
