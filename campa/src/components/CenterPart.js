@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import img1 from "../images/img1.jpg";
 import globe from "../images/globe.png";
 import satellite from "../images/satellite.png";
@@ -26,6 +27,7 @@ import Granularity from '../components/Granularity';
 import BiodiversityPanel from "./BiodiversityPanel";
 import IllegalActivityPanel from "./IllegalActivityPanel";
 import ForestIntelligence from "./ForestIntelligence";
+import Precipitation from "./Precipitation";
 
 function CenterPart() {
   return (
@@ -153,27 +155,15 @@ function CenterPart() {
              </div>
               
             </div>
-            <div className="four" id="four3" style={{marginRight:'30px', marginTop: "-5px" }}>
+            {/* <div className="four" id="four3" style={{marginRight:'30px', marginTop: "-5px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
-              <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-              <strong>Precipitation</strong>
-              </h6>
-              </div>
-              <div className="rain d-flex justify-content-center">
-              <img
-            style={{
-              marginTop: '15px',
-              marginBottom: "20px",
-              width: "60px",
-              height: "60px",
-            }}
-            src={rain}
-          ></img>
+              
              </div>
               <div className="valuehere d-flex justify-content-center">
                 <strong style={{fontSize:'30px'}}>21.99mm </strong>
               </div>
-            </div>
+            </div> */}
+            <Precipitation/>
             <div className="four" id="four4" style={{ marginTop: "-5px" }}>
               <div className="climateHeadinng d-flex justify-content-center">
               <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>

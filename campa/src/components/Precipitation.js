@@ -1,30 +1,28 @@
 import React, { useState, useEffect } from "react";
-import rain from "../images/rain.png"; // adjust your path
+import rain from "../images/rain.png"; // your icon path
 
-const PrecipitationCard = ({ value = 21.99 }) => {
+export default function Precipitation() {
+  // animated number state
   const [displayValue, setDisplayValue] = useState(0);
+  const targetValue = 21.99; // your target number
 
   useEffect(() => {
     let currentVal = 0;
-    const step = value / 50; // speed of increment
+    const step = targetValue / 50; // how many steps to reach target
     const timer = setInterval(() => {
       currentVal += step;
-      if (currentVal >= value) {
-        currentVal = value;
+      if (currentVal >= targetValue) {
+        currentVal = targetValue;
         clearInterval(timer);
       }
-      setDisplayValue(parseFloat(currentVal.toFixed(2))); // 2 decimal places
-    }, 30); // adjust speed here
+      setDisplayValue(parseFloat(currentVal.toFixed(2))); // 2 decimals
+    }, 30); // speed
 
     return () => clearInterval(timer);
-  }, [value]);
+  }, []);
 
   return (
-    <div
-      className="four"
-      id="four3"
-      style={{ marginRight: "30px", marginTop: "-5px" }}
-    >
+    <div className="four" id="four3" style={{ marginRight: "30px", marginTop: "-5px" }}>
       <div className="climateHeadinng d-flex justify-content-center">
         <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
           <strong>Precipitation</strong>
@@ -47,6 +45,4 @@ const PrecipitationCard = ({ value = 21.99 }) => {
       </div>
     </div>
   );
-};
-
-export default Precipitation;
+}
