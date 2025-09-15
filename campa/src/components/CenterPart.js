@@ -466,11 +466,8 @@ function CenterPart() {
           ></img>
         </div>
       </div>
-      <div
-        className="d-flex justify-content-evenly align-items-stretch"
-        style={{ marginTop: "35px", gap: "20px" }}
-      >
-        <div className="new">
+      <div class="d-flex justify-content-evenly align-items-stretch" style={{marginTop:'35px' , gap:'20px'}}>
+        <div className="new5">
           {/* <div className="d-flex justify-content-center">
           <h6 style={{padding:'10px'}}><strong>Biodiversity in the location</strong></h6>
           </div> */}
@@ -481,8 +478,8 @@ function CenterPart() {
 
           {/* </div>
           </div> */}
-        </div>
-        <div className="new ">
+          </div>
+        <div className="new5 ">
           {/* <div className="d-flex justify-content-center">
           
           <h6 style={{padding:'10px'}}><strong>Illegal Activities happening in forest</strong></h6>
