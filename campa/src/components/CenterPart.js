@@ -26,6 +26,7 @@ import Granularity from "../components/Granularity";
 import BiodiversityPanel from "./BiodiversityPanel";
 import IllegalActivityPanel from "./IllegalActivityPanel";
 import ForestIntelligence from "./ForestIntelligence";
+import Precipitation from "./Precipitation";
 
 function CenterPart() {
   return (
@@ -147,11 +148,9 @@ function CenterPart() {
               id="four3"
               style={{ marginRight: "30px", marginTop: "-5px" }}
             >
-              <div className="climateHeadinng d-flex justify-content-center">
-                <h6 style={{ fontSize: "16px", paddingTop: "10px" }}>
-                  <strong>Precipitation</strong>
-                </h6>
-              </div>
+              <Precipitation/>
+
+
               <div className="rain d-flex justify-content-center">
                 <img
                   style={{
