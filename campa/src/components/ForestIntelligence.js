@@ -5,7 +5,7 @@ import Vector3 from "../images/Vector3.png";
 import Vector4 from "../images/Vector4.png";
 
 // Local hook — no export default here
-function useCountUp(end, duration = 2000) {
+function useCountUp(end, duration = 1500) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
