@@ -9,15 +9,15 @@ font-family:'Poppins';
   height: calc(100vh - 68px);
   
 }
-
+/* 
 @media (max-width: 768px) {
   .rightChatbox {
     display: none;
   }
   .center {
     margin: 0;
-  }
-}
+  } */
+/* } */
 .heading{
   display: flex;
   font-size: 19px;;
@@ -232,3 +232,20 @@ border: 0.5px solid rgba(0, 0, 0, 0.2);
   background: linear-gradient(90.77deg, rgba(255, 255, 255, 0.15) 49.77%, rgba(17, 104, 104, 0.15) 108.69%);
 border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
+/* @media (max-width: 1024px) {
+  .rightChatbox {
+    display: none;
+  }
+  .center {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftpanel {
+    display: none;
+  }
+  .center-content {
+    margin-left: 0;
+  }
+} */

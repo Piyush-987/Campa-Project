@@ -92,7 +92,7 @@ const TemperatureWidget = () => {
         />
         {/* Indicator dot */}
         <motion.g
-          transform-origin="225 225"
+          transformOrigin="225 225"
           initial={{ rotate: indicatorStartAngle }}
           animate={{ rotate: finalIndicatorAngle }}
           transition={{ duration: 2, ease: 'easeOut' }}

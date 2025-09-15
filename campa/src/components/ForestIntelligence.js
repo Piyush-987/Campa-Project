@@ -6,7 +6,7 @@ import Vector4 from "../images/Vector4.png";
 function ForestIntelligence() {
   return (
     <div>
-        <div class="d-flex justify-content-evenly">
+        <div className="d-flex justify-content-evenly">
         <div className="new1" id="box1" style={{ fontWeight: "600" }}>
           <img
             style={{
