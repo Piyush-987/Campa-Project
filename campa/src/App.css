@@ -34,12 +34,6 @@ font-family:'Poppins';
   margin-right: 300px; 
   height: cacl(100vh-68px);
   flex:1;
-
-  flex-wrap: wrap;       /* Allows wrapping on smaller screens */
-  justify-content: center; /* Centers the items */
-  gap: 20px;             /* Space between items */
-  /* padding: 20px; */
-  max-width: 63%; 
   
 }
  .bell{
@@ -95,8 +89,8 @@ border-radius: 10px;
 
 .new5{
   border: 1px solid #E8E8E8;
-  width: 500px;
-  height: 356px;
+  width:470px;
+  height: 350px;
   border-radius: 10px;
   margin-bottom: 20px;;
 }
