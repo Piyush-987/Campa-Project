@@ -32,12 +32,12 @@ function PhotoGallery() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: "20px", // space between arrows and gallery
+        gap: "30px", 
         margin: "auto",
-        width: "1150px", // widened for 3 images + 45px gaps
+        width: "1150px", 
       }}
     >
-      {/* Left Arrow */}
+      
       <img
         src={left}
         alt="Previous"
@@ -49,20 +49,20 @@ function PhotoGallery() {
         }}
       />
 
-      {/* Image track container */}
+      
       <div
         style={{
           position: "relative",
-          width: "1010px", // fits 3 images + gaps
+          width: "1010px", 
           overflow: "hidden",
         }}
       >
         <div
           style={{
             display: "flex",
-            gap: "45px", // 🔥 updated gap
+            gap: "45px", 
             transition: "transform 0.5s ease-in-out",
-            transform: `translateX(-${index * (265 + 45)}px)`, // include 45px gap
+            transform: `translateX(-${index * (265 + 45)}px)`, 
           }}
         >
           {photos.map((photo, i) => (
@@ -77,7 +77,7 @@ function PhotoGallery() {
                 flexShrink: 0,
               }}
             >
-              {/* Label */}
+              
               <div
                 style={{
                   position: "absolute",
@@ -92,7 +92,7 @@ function PhotoGallery() {
                 <h6 style={{ margin: 0, fontSize: "12px" }}>{photo.label}</h6>
               </div>
 
-              {/* Image */}
+              
               <img
                 src={photo.src}
                 alt={photo.label}
@@ -103,7 +103,7 @@ function PhotoGallery() {
                 }}
               />
 
-              {/* Footer */}
+              
               <div
                 style={{
                   display: "flex",
@@ -120,7 +120,7 @@ function PhotoGallery() {
         </div>
       </div>
 
-      {/* Right Arrow */}
+      
       <img
         src={right}
         alt="Next"
