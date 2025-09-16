@@ -9,22 +9,22 @@ font-family:'Poppins';
   height: calc(100vh - 68px);
   
 }
-
+/* 
 @media (max-width: 768px) {
   .rightChatbox {
     display: none;
   }
   .center {
     margin: 0;
-  }
-}
+  } */
+/* } */
 .heading{
   display: flex;
   font-size: 19px;;
   flex-direction: row;
   background-color:#f0f0f0;
-  height:70px;
-  width:987px;
+  max-height:10vh;
+  max-width:100%;
   padding-left: 15px;
   padding-top: 12px;
   margin-bottom: 18px;
@@ -93,8 +93,8 @@ border-radius: 10px;
 
 .new5{
   border: 1px solid #E8E8E8;
-  width: 500px;
-  height: 356px;
+  width:470px;
+  height: 350px;
   border-radius: 10px;
   margin-bottom: 20px;;
 }
@@ -245,3 +245,20 @@ border: 0.5px solid rgba(0, 0, 0, 0.2);
   background: linear-gradient(90.77deg, rgba(255, 255, 255, 0.15) 49.77%, rgba(17, 104, 104, 0.15) 108.69%);
 border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
+/* @media (max-width: 1024px) {
+  .rightChatbox {
+    display: none;
+  }
+  .center {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftpanel {
+    display: none;
+  }
+  .center-content {
+    margin-left: 0;
+  }
+} */

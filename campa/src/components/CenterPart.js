@@ -28,6 +28,7 @@ import BiodiversityPanel from "./BiodiversityPanel";
 import IllegalActivityPanel from "./IllegalActivityPanel";
 import ForestIntelligence from "./ForestIntelligence";
 import Precipitation from "./Precipitation";
+import PhotoGallery from "./PhotoGallery";
 
 function CenterPart() {
   return (
@@ -284,7 +285,7 @@ function CenterPart() {
       <h4 style={{ paddingLeft: "15px", paddingBottom: "18px" }}>
         <strong>Photo Gallery</strong>
       </h4>
-      <div class="d-flex justify-content-between align-items-center">
+      {/* <div class="d-flex justify-content-between align-items-center">
         <div style={{width:'35px', height:'35px', borderRadius:'5px'}}>
 
             <img
@@ -356,7 +357,8 @@ function CenterPart() {
           ></img>
 
         </div>
-      </div>
+      </div> */}
+      <PhotoGallery/>
       <div class="d-flex justify-content-evenly align-items-stretch" style={{marginTop:'35px' , gap:'20px'}}>
         <div className="new5">
           {/* <div className="d-flex justify-content-center">

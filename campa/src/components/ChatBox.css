@@ -3,8 +3,8 @@
   right: 0;
   bottom: 0;
   top: 68px;
-  width: 300px;
-  background: #f5f7fb; /* very light background */
+  width: 18%;
+  background: #f5f7fb; 
   border-left: 1px solid #ddd;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
 }
 
 .chatbox-suggestion button:hover{ 
-  background:rgb(38, 1, 59);
+  background:rgba(0, 28, 70, 0.7);
 }
 
 .chatbox-input{
@@ -120,5 +120,5 @@
 }
 
 .chatbox-input .send-button:hover{
-  background: rgb(64, 64, 172);
+  background: #0d3057;
 }
