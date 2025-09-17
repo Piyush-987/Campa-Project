@@ -34,6 +34,7 @@ font-family:'Poppins';
   margin-right: 300px; 
   height: cacl(100vh-68px);
   flex:1;
+  width: 65vw;
   
 }
  .bell{

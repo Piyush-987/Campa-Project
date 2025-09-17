@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import img1 from "../images/img1.jpg";
 import globe from "../images/globe.png";
 import satellite from "../images/satellite.png";
