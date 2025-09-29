@@ -1,47 +1,41 @@
-import './App.css';
-import CenterPart from './components/CenterPart';
-import ChatSection from './components/ChatSection';
-import LeftPanel from './components/LeftPanel';
-import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import ContactUs from './components/ContactUs';
+import "./App.css";
+import CenterPart from "./components/CenterPart";
+import ChatSection from "./components/ChatSection";
+import LeftPanel from "./components/LeftPanel";
+import Navbar from "./components/Navbar";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import Home from "./components/Home";
+import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <div>
-    
-    <div className='app'>
-      <Router>
-    <Navbar style={{position:'fixed'}} />
-    <Routes>
-      <Route path="/home" element={<Home/>}>
-      </Route>
-    </Routes>
+      <div className="app">
+        <BrowserRouter>
+          <Navbar />
 
-<Routes>
-      <Route path="/aboutus" element={<AboutUs/>}>
-      </Route>
-    </Routes>
+          <Routes>
+            <Route path="/home" element={<Home />}></Route>
 
-<Routes>
-      <Route path="/services" element={<Services/>}>
-      </Route>
-    </Routes>
+            <Route path="/aboutus" element={<AboutUs />}></Route>
 
-<Routes>
-      <Route path="/contactus" element={<ContactUs/>}>
-      </Route>
-    </Routes>
+            <Route path="/services" element={<Services />}></Route>
 
-    </Router>
-    <div className='layout' >
-    <LeftPanel />
-    <CenterPart />
-    <ChatSection />
-    </div>
-    </div>
+            <Route path="/contactus" element={<ContactUs />}></Route>
+          </Routes>
+        </BrowserRouter>
+        <div className="layout">
+          <LeftPanel />
+          <CenterPart />
+          <ChatSection />
+        </div>
+      </div>
     </div>
   );
 }

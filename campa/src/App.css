@@ -9,15 +9,15 @@ font-family:'Poppins';
   height: calc(100vh - 68px);
   
 }
-/* 
-@media (max-width: 768px) {
-  .rightChatbox {
+
+/* @media (max-width: 768px) {
+  .checklist_item {
     display: none;
-  }
+  }}
   .center {
     margin: 0;
   } */
-/* } */
+
 .heading{
   display: flex;
   font-size: 19px;;

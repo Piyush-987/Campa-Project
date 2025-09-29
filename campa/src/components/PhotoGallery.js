@@ -32,9 +32,9 @@ function PhotoGallery() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: "30px", 
+        gap: "20px", 
         margin: "auto",
-        width: "1150px", 
+        width: "1005px", 
       }}
     >
       
@@ -60,7 +60,7 @@ function PhotoGallery() {
         <div
           style={{
             display: "flex",
-            gap: "45px", 
+            gap: "42px", 
             transition: "transform 0.5s ease-in-out",
             transform: `translateX(-${index * (265 + 45)}px)`, 
           }}

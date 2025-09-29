@@ -9,18 +9,18 @@ import carbonmap from "../images/carbonmap.png";
 import leaf from "../images/leaf.png";
 import elephant from "../images/elephant.png";
 import trees from "../images/trees.png";
-import image1 from "../images/image1.png";
-import image2 from "../images/image2.png";
-import image3 from "../images/image3.png";
+// import image1 from "../images/image1.png";
+// import image2 from "../images/image2.png";
+// import image3 from "../images/image3.png";
 import plus from '../images/plus.png'
 import minus from '../images/minus.png'
 import ElementLevels from './ElementLevels';
 import Temperature from '../components/Temperature';
 import AirQuality from '../components/AirQuality';
 import Pressure from '../components/Pressure';
-import rain from '../images/rain.png';
-import left from '../images/left.png';
-import right from '../images/right.png';
+// import rain from '../images/rain.png';
+// import left from '../images/left.png';
+// import right from '../images/right.png';
 import red from '../images/red.png';
 import Granularity from '../components/Granularity';
 import BiodiversityPanel from "./BiodiversityPanel";
